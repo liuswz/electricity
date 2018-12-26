@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>添加热门搜索</title>
+     <link rel="stylesheet" th:href="@{css/add_phone.css}"></link>
+</head>
+<body>
+	<div class="div_all">
+  	<!-- 第一层 -->
+  		<div id="whole_menu">
+			<div class="div_menu">
+  					<span>用户名:</span><span style="color: red; line-height: 30px;" th:text="${session.username}">
+							</span>
+				
+				<a href="addPhone">添加手机</a>
+				<a href="showPhone">查询手机</a>	
+				<a href="showAds">广告窗管理</a>			
+				<a href="showHotSearch">热门搜索管理</a>	
+				<a href="showManager">用户管理</a>
+				<a href="login">注销/登入</a>
+  				
+  				
+  			
+  			</div>
+		</div>
+  		<!--第2层  -->
+  		<div class="nav">
+		<h1>比比网</h1>
+		<div class="nav1">
+		<form  th:action="@{/add_HotSearch}"   method="post" id="myform" >
+				
+				<p>
+					<label for="phone_name">名称：</label> <input type="text"
+						name="value" size="20px" style="width:200px;" >
+				</p>
+				
+				
+				
+				<input class="submit_button" type="submit" value="提交" />
+			</form>
+		</div>
+	</div>
+  	</div>
+
+    <script th:src="@{js/jquery-1.11.3.min.js}"></script>
+	<script th:src="@{js/jquery.validate.js}"></script>
+	<script th:src="@{js/additional-methods.js}"></script>
+    <script type="text/javascript" th:inline="javascript">
+	
+	
+    $(function() {
+    	
+		$("#myform").validate({
+			// debug: true, //调试模式取消submit的默认提交功能 */   
+			//errorClass: "label.error", //默认为错误的样式类为：error   
+		rules : {
+				
+				
+				value : {
+					required : true,
+					
+				}
+		
+
+			},
+			messages : {
+				
+				pageId : {
+					required : "名称不能为空",
+					
+				}
+				
+				
+			
+				 
+			}
+		
+
+		});
+
+	});
+
+    </script>
+
+</body>
+</html>

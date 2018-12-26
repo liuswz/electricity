@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:f="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+    <android.support.v7.widget.AppCompatImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@mipmap/gengduoxinxi"
+        android:layout_marginLeft="18dp"
+        android:id="@+id/back_page"
+        />
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入搜索内容"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+            />
+    <android.support.v7.widget.AppCompatImageButton
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:background="@mipmap/sousuo"
+        android:layout_marginRight="15dp"
+        android:id="@+id/search_icon"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/no_content"
+          android:gravity="center"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亲，没有找到改内容呢，换个试试"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/grey"
+            android:layout_marginBottom="100dp"
+            />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_result"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_view"
+
+        android:background="#fff"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/history_title"
+        android:gravity="left"
+        android:background="#fff"
+        android:orientation="vertical"
+
+      >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="历史搜索"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:alpha="0.8"
+            />
+    </LinearLayout>
+    <com.electricity.hasee.electricity.XUtil.FlowLayout
+        android:id="@+id/side_slip2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dip"
+        android:paddingTop="6dip"
+        android:paddingRight="13dip"
+        android:paddingBottom="12dip"
+        f:orientation="horizontal"
+        f:horizontalSpacing="12dip"
+        f:verticalSpacing="6dip"
+
+        >
+    </com.electricity.hasee.electricity.XUtil.FlowLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="left"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="热门搜索"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+
+            android:alpha="0.8"
+            />
+    </LinearLayout>
+    <com.electricity.hasee.electricity.XUtil.FlowLayout
+        android:id="@+id/side_slip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dip"
+        android:paddingTop="6dip"
+        android:paddingRight="13dip"
+        android:paddingBottom="12dip"
+        f:orientation="horizontal"
+        f:horizontalSpacing="12dip"
+        f:verticalSpacing="6dip"
+
+       >
+     <!--   <TextView
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="小米8"
+            android:textSize="10sp" />
+-->
+
+
+    </com.electricity.hasee.electricity.XUtil.FlowLayout>
+    </LinearLayout>
+</LinearLayout>

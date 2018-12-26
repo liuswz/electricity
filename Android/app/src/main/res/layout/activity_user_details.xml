@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:f="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#266cdc"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        >
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/fanhui"
+            android:layout_marginLeft="18dp"
+            android:id="@+id/ud_back"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="个人信息"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/rank_title"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/icon_person"
+            android:id="@+id/ud_touxiang"
+            android:layout_gravity="center"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="18043547071"
+            android:id="@+id/ud_usernametext"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ebebeb"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:id="@+id/ud_nicknamelayout"
+        android:background="@drawable/click_changecolor"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:text="昵称"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:text="18043517071"
+            android:id="@+id/ud_nicknametext"
+            android:textSize="20sp"
+            android:textColor="#666"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebebeb"
+        />
+</LinearLayout>

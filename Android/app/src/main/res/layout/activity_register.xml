@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:f="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/cha"
+            android:layout_marginLeft="18dp"
+            android:id="@+id/register_back"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fff"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速注册"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fff"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入手机号"
+            android:textColor="@color/black"
+            android:textColorHint="#d9d9d9"
+            android:textSize="19sp"
+            android:id="@+id/register_phonenumber"
+            android:background="@drawable/bottom_line2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号格式错误"
+            android:id="@+id/phone_wrongtext"
+            android:textColor="@color/red"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入密码(6-20位)"
+            android:textColor="@color/black"
+            android:textColorHint="#d9d9d9"
+            android:paddingTop="20dp"
+            android:textSize="19sp"
+            android:inputType="textPassword"
+            android:id="@+id/register_password"
+            android:background="@drawable/bottom_line2"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码格式错误要求6-20位"
+            android:textColor="@color/red"
+            android:id="@+id/pass_wrongtext"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入密码(6-20位)"
+            android:textColor="@color/black"
+            android:textColorHint="#d9d9d9"
+            android:paddingTop="20dp"
+            android:textSize="19sp"
+            android:inputType="textPassword"
+            android:id="@+id/register_password2"
+
+            android:background="@drawable/bottom_line2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2次密码输入不一致"
+            android:textColor="@color/red"
+            android:id="@+id/pass_wrongtext2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/button_border"
+        android:text="注册"
+        android:textColor="#fff"
+        android:textSize="21sp"
+        android:layout_marginTop="65dp"
+        android:id="@+id/register_button"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:alpha="0.8"
+            android:text="个性化推荐"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:alpha="0.8"
+            android:text="性能"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+       >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您平时玩什么游戏呢？"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/game_group"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:text="从来不玩游戏"
+                android:id="@+id/game_group1"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="只玩王者荣耀等不太需要高性能的游戏（多数选择）"
+                android:textSize="13sp"
+                android:checked="true"
+
+                android:id="@+id/game_group2"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="玩刺激战场，NBA2K等大型游戏"
+                android:textSize="13sp"
+                android:id="@+id/game_group3"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:alpha="0.8"
+            android:text="拍照"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您经常使用前置摄像头吗？"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/front_cam_group"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:text="从不使用"
+                android:id="@+id/front_cam_group1"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="不经常使用（多数选择）"
+                android:checked="true"
+                android:textSize="13sp"
+                android:id="@+id/front_cam_group2"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="我是个经常自拍的女生哦"
+                android:textSize="13sp"
+                android:id="@+id/front_cam_group3"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您经常使用后置摄像头吗？"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_cam_group"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:text="就用它扫个码"
+                android:id="@+id/back_cam_group1"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="只旅游等特殊需要才拍照（多数选择）"
+                android:checked="true"
+                android:textSize="13sp"
+                android:id="@+id/back_cam_group2"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="去哪里都要拍个照纪念一下"
+                android:textSize="13sp"
+                android:id="@+id/back_cam_group3"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:alpha="0.8"
+            android:text="外观"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您对手机尺寸有什么需求吗？"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/size_group"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:text="只要小屏（小5.9寸）"
+                android:id="@+id/size_group1"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="主流大小就行（多数选择）"
+                android:checked="true"
+                android:textSize="13sp"
+                android:id="@+id/size_group2"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您对手机正面有什么需求吗？"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/front_beauty_group"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:text="屏占比多少无所谓，能用就行"
+                android:id="@+id/front_beauty_group1"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="屏占比越大越好（多数选择）"
+                android:checked="true"
+                android:textSize="13sp"
+                android:id="@+id/front_beauty_group2"
+              />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您对手机背面有什么需求吗？"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_beauty_group"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:text="一点不关心背面"
+                android:id="@+id/back_beauty_group1"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="越好看，能引人注目越好（多数选择）"
+                android:textSize="13sp"
+                android:checked="true"
+                android:id="@+id/back_beauty_group2"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您对手机手感有什么需求吗？"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hand_group"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:text="无所谓"
+                android:id="@+id/hand_group1"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="感觉越薄越好（多数选择）"
+                android:textSize="13sp"
+                android:checked="true"
+                android:id="@+id/hand_group2"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.8"
+                android:text="屏幕"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="您对屏幕有什么需求呢？"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/screan_group"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="高清屏、护眼、不需要太鲜艳（多数选择）"
+                    android:textSize="13sp"
+                    android:checked="true"
+                    android:id="@+id/screan_group1"
+                    android:background="@drawable/bottom_line"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="色彩越鲜艳越好"
+                    android:textSize="13sp"
+                    android:id="@+id/screan_group2"
+                    />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:alpha="0.8"
+            android:text="续航"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您需要电一次能用很久吗？"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/battery_group"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:text="不需要，我可以经常充电"
+                android:id="@+id/battery_group1"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="使用时间越长越好（多数选择）"
+                android:textSize="13sp"
+                android:checked="true"
+                android:id="@+id/battery_group2"
+               />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您对充电速度有什么要求吗？"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/charge_group"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:text="没要求"
+                android:id="@+id/charge_group1"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="充电速度越快越好（多数选择）"
+                android:textSize="13sp"
+                android:id="@+id/charge_group2"
+                android:checked="true"
+                android:background="@drawable/bottom_line"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:alpha="0.8"
+            android:text="品牌"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您是必须要买某个品牌吗"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/brand_group"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="都行，都可以尝试（多数选择）"
+                android:textSize="13sp"
+                android:id="@+id/brand_group1"
+                android:checked="true"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="只要小米"
+                android:textSize="13sp"
+                android:id="@+id/brand_group2"
+                android:background="@drawable/bottom_line"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="只要荣耀"
+                android:textSize="13sp"
+                android:id="@+id/brand_group3"
+                android:background="@drawable/bottom_line"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="只要华为"
+                android:textSize="13sp"
+                android:id="@+id/brand_group4"
+                android:background="@drawable/bottom_line"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="只要苹果"
+                android:textSize="13sp"
+                android:id="@+id/brand_group5"
+                android:background="@drawable/bottom_line"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="只要魅族"
+                android:textSize="13sp"
+                android:id="@+id/brand_group6"
+                android:background="@drawable/bottom_line"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="只要oppo"
+                android:textSize="13sp"
+                android:id="@+id/brand_group7"
+                android:background="@drawable/bottom_line"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="只要vivo"
+                android:textSize="13sp"
+                android:id="@+id/brand_group8"
+
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:alpha="0.8"
+            android:text="特殊功能"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您有什么必须要的特殊功能吗"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/specail_group"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="没有（多数选择）"
+                android:textSize="13sp"
+                android:checked="true"
+                android:id="@+id/specail_group1"
+                android:background="@drawable/bottom_line"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="nfc(刷公交卡)"
+                android:textSize="13sp"
+                android:id="@+id/specail_group2"
+                android:background="@drawable/bottom_line"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="屏幕指纹解锁"
+                android:textSize="13sp"
+                android:id="@+id/specail_group3"
+                android:background="@drawable/bottom_line"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="红外线遥控（控制家电）"
+                android:textSize="13sp"
+                android:id="@+id/specail_group4"
+                android:background="@drawable/bottom_line"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="无线充电"
+                android:textSize="13sp"
+                android:id="@+id/specail_group5"
+                android:background="@drawable/bottom_line"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="防水"
+                android:textSize="13sp"
+                android:id="@+id/specail_group6"
+                android:background="@drawable/bottom_line"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="扩展sd储存卡"
+                android:textSize="13sp"
+                android:id="@+id/specail_group7"
+
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="3D结构光"
+                android:textSize="13sp"
+                android:id="@+id/specail_group8"
+
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:id="@+id/phone_submit"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
+</ScrollView>

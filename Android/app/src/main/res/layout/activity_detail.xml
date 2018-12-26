@@ -1,0 +1,1566 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.electricity.hasee.electricity.XUtil.ScrollBottomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aandroid="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.stx.xhb.xbanner.XBanner
+                android:id="@+id/banner_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="360dp"
+                app:AutoPlayTime="3000"
+
+
+                app:pointsPosition="CENTER"
+
+                app:tipTextSize="16.0sp" />
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/gengduoxinxi"
+                android:layout_marginLeft="18dp"
+                android:id="@+id/detail_back_page"
+                android:layout_marginTop="18dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:alpha="0.8"
+                android:text="小米8青春版"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/detail_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="6.21寸"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:id="@+id/detail_size"
+               />
+
+
+            <TextView
+                android:layout_width="50dp"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:layout_marginRight="30dp"
+                android:gravity="right"
+                android:text="点击量：15"
+
+                android:id="@+id/detail_click_num"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                android:layout_marginRight="30dp"
+                android:gravity="right"
+                android:text="收藏"
+                android:clickable="true"
+                android:textColor="@color/red"
+                android:id="@+id/detail_collection"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:alpha="0.8"
+                android:text="小编评价"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bottom_line">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:singleLine="false"
+                android:text="纳米镀层渐变色后盖 千元机最强拍照 前置2480W R17同款 后置小米8同款 日常非常流畅 总体对标oppo r17 笔者自身使用"
+                android:id="@+id/detail_self_comment"
+                android:textSize="15sp"
+                />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/detail_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="总体分数"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:text="120000分"
+                android:id="@+id/detail_sum_score"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+           >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="性价比分数"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:text="120000分"
+                android:id="@+id/detail_score"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:alpha="0.8"
+                android:text="价格"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/detail_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+          >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:paddingLeft="30dp"
+
+                android:text="4+64g"
+                android:id="@+id/detail_type1"
+                android:textSize="18sp"
+               />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:text="1299元"
+                android:id="@+id/detail_price1"
+                android:textSize="18sp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/type2_layout"
+         >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/type3_layout"
+
+            >
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+          >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:paddingLeft="30dp"
+
+                android:text="内存差价"
+
+                android:textSize="13sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="150元"
+                android:id="@+id/detail_different_price"
+                android:textSize="13sp"
+                android:paddingLeft="30dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="说明：因为每个手机最低内存配置不同，计算性价比时不同，这里按4+64g计算，因此存在差价"
+                android:textColor="@color/grey"
+                android:textSize="10sp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="left"
+                android:clickable="true"
+                android:textColor="@color/red"
+                android:text="进入官网"
+                android:textSize="15sp"
+                android:id="@+id/detail_officialShopLink"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:gravity="right"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/red"
+                android:text="进入最低价淘宝店家"
+                android:textSize="15sp"
+                android:clickable="true"
+                android:id="@+id/detail_cheapestShopLink"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.8"
+                android:text="ui系统"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/detail_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="名称"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:text="miui10"
+                android:id="@+id/detail_uiname"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="ui分数:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+                android:id="@+id/detail_ui_num"
+                android:text="8500分"
+
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.8"
+                android:text="性能评测"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginRight="30dp"
+                android:clickable="true"
+                android:alpha="0.8"
+                android:gravity="right"
+                android:text="参考安兔兔评测"
+                android:textSize="13sp"
+               />
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/detail_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="处理器："
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:text="晓龙660"
+                android:id="@+id/detail_cpu"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="日常流畅(cpu)"
+
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+                android:id="@+id/detail_rechangnum"
+                android:text="67000分"
+
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:text="说明：因为日常流畅度每个手机都不同，很难具体测试，但日常使用时只有cpu工作，gpu不工作，因此用cpu分数替代"
+                android:textColor="@color/grey"
+                android:textSize="10sp"
+                />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/detail_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="游戏流畅"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+                android:id="@+id/detail_gamenum"
+                android:text="48500分"
+
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+
+                android:text="cpu:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+
+                android:text="67000分"
+                android:id="@+id/detail_cpu_num2"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+
+                android:text="gpu:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+                android:id="@+id/detail_gpu_num"
+                android:text="30000分"
+
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:text="说明：不同游戏侧重cpu和gpu性能不同，这里按1：1计算"
+                android:textColor="@color/grey"
+                android:textSize="10sp"
+                />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/detail_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="ai性能"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+
+                android:text="858分"
+                android:id="@+id/detail_ai_num"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="闪存名称"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+
+                android:text="emmc"
+                android:id="@+id/detail_romname"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="分数:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+                android:id="@+id/detail_rom_num"
+                android:text="8500分"
+
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+<!--拍照-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.8"
+                android:text="拍照"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginRight="30dp"
+                android:clickable="true"
+                android:alpha="0.8"
+                android:gravity="right"
+                android:text="参考dxo拍照评测"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/detail_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="前置："
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+                android:text="SONY IMX576，4合1，1.8um大像素"
+                android:singleLine="false"
+                android:textSize="15sp"
+                android:id="@+id/detail_front_cam"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="分数:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+
+                android:text="18500分"
+                android:id="@+id/detail_front_cam_num"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="后置："
+
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:id="@+id/detail_back_cam"
+                android:layout_height="40dp"
+
+                android:singleLine="false"
+                android:text="后置 12MP，SONY IMX363，1.4um 大像素，f/1.9 大光圈，Dual PD 双核对焦 5MP,SAMSUNG S5K5E8,1.12um"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="分数:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+                android:id="@+id/detail_back_cam_num"
+                android:text="18500分"
+
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+<!--外观-->
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.8"
+                android:text="外观"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:alpha="0.8"
+            android:gravity="right"
+            android:text="参考屏占比、材质、厚度等"
+            android:textSize="13sp"
+            />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/detail_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="正面："
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+                android:id="@+id/detail_front_beauty"
+
+                android:text="19:9刘海屏"
+                android:singleLine="false"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="分数:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:text="11500分"
+                android:id="@+id/detail_front_beauty_num"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="后盖："
+
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/detail_back_beauty"
+                android:layout_height="40dp"
+
+                android:singleLine="false"
+                android:text="纳米镀层渐变色 玻璃材质"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="分数:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:id="@+id/detail_back_beauty_num"
+                android:text="18500分"
+
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="手感:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:text="1850分"
+                android:id="@+id/detail_hand_num"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="说明：手感分数根据厚度和弧度测量"
+                android:textColor="@color/grey"
+                android:textSize="10sp"
+                />
+
+
+        </LinearLayout>
+
+        <!--屏幕-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.8"
+                android:text="屏幕"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginRight="30dp"
+                android:clickable="true"
+                android:alpha="0.8"
+                android:gravity="right"
+                android:text="参考官方参数"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/detail_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="名称"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:text="lcd"
+                android:id="@+id/detail_screen"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="分数:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:text="8900分"
+                android:id="@+id/detail_screen_num"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+<!--续航-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.8"
+                android:text="续航"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginRight="30dp"
+                android:clickable="true"
+                android:alpha="0.8"
+                android:gravity="right"
+                android:text="参考大米评测"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/detail_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="电池容量:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+
+                android:text="3350mah"
+                android:id="@+id/detail_battery"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="功耗:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+
+                android:text="晓龙660 14mm工艺"
+                android:id="@+id/detail_consume_power"
+                android:textSize="17sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="分数:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+
+                android:text="1000"
+                android:id="@+id/detail_consume_power_num"
+                android:textSize="17sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="充电："
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+                android:id="@+id/detail_charge"
+                android:text="支持 QC3.0 快充 标配 5V2A  Type-C接口"
+                android:singleLine="false"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="分数:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:id="@+id/detail_charge_num"
+                android:text="18500分"
+
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+<!--特殊-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.8"
+                android:text="特殊功能"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/detail_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="详情："
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+                android:id="@+id/detail_special"
+                android:text="无"
+                android:singleLine="false"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="分数:"
+
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+
+
+                android:text="0分"
+                android:id="@+id/detail_special_num"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.8"
+                android:text="评价"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginRight="30dp"
+                android:clickable="true"
+
+                android:gravity="right"
+                android:text="评价"
+                android:textColor="@color/red"
+                android:textSize="17sp"
+                android:id="@+id/add_comment"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_marginBottom="80dp">
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:nestedScrollingEnabled="false"
+
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.electricity.hasee.electricity.XUtil.ScrollBottomScrollView>

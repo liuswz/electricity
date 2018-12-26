@@ -1,0 +1,127 @@
+.whole_menu{
+	width:1500px;
+	height:26px;
+	background: #f1f1f1;
+	
+	line-height:30px;
+}
+.div_menu{
+	margin-left:400px;
+	width:900px;
+	height:26px;
+}
+.div_menu a{
+	
+	color:#6E6D67;
+	text-decoration:none;
+	font-family:宋体;
+	font-size:13px;
+	margin-left:30px;
+	
+}
+.div_menu span{
+	
+	color:#6E6D67;
+	text-decoration:none;
+	font-family:宋体;
+	font-size:14px;
+	margin-left:30px;
+	float:left;
+	
+}
+
+.div_menu a:hover{
+	color:#c81623;
+}
+
+
+/* .nav-list{
+	position:absolute;
+	top:-13px;
+	right:30px;
+}
+nav{
+	position:relative;
+} */
+.div_2{
+	width:1500px;
+	height:800px;
+	/* background: red; */
+	margin-top:50px;
+	position: relative;
+}
+.div_show{
+	width:1300px;
+	height:800px;
+	border-top:1px dashed;
+	border-left:1px dashed;
+	border-right:1px dashed;
+	position: absolute;
+	top:0px;
+	left:100px;	
+}
+.table_class{
+	margin:50px 100px;
+}
+.goods_update{
+	width:200px;
+	color:red;
+	text-decoration: none;
+	/* float:left; */
+}
+.goods_delete{
+	width:100px;
+	color:red;
+	text-decoration: none;
+	/* float:left; */
+}
+.goods_update:hover{
+	color:#c81623;
+}
+.goods_delete:hover{
+	color:#c81623;
+}
+.div_sousuo{
+	width:550px;
+	height:40px;
+	position:relative;
+	margin:0px 350px;
+	/* float:left; */
+}
+.input1{
+	width:460px;
+	height:38px;
+	border:solid #B61D1D;
+	font-size: 16px;
+	float:left;
+	/* margin:50px 40px; */
+	position:absolute;
+	top:38px;
+	left:0px;
+}
+.button1{
+	width: 82px;
+	height: 42px;
+	background: #B61D1D;
+	border: none;
+	color: #fff;
+	float:left;
+	position:absolute;
+	top:39px;
+	left:465px;
+}
+
+.add_test{
+	position:absolute;
+	color:#6E6D67;
+	text-decoration:none;
+	font-family:宋体;
+	font-size:15px;
+	right:200px;
+	top:70px;
+	z-index: 10;
+}
+.add_test :hover{
+	color:#c81623;
+	
+}

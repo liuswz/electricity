@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>登入</title>
+     <link rel="stylesheet" th:href="@{css/show_phone.css}"></link>
+</head>
+<body>
+	
+	<div class="div_all">
+
+		<div id="whole_menu">
+			<div class="div_menu">
+  				
+					<span>用户名:</span><span style="color: red; line-height: 30px;" th:text="${session.username}">
+							</span>
+				
+				
+				<a href="addPhone">添加手机</a>
+				<a href="showPhone">查询手机</a>	
+				<a href="showAds">广告窗管理</a>	
+				<a href="showHotSearch">热门搜索管理</a>				
+				<a href="showManager">用户管理</a>
+				<a href="login">注销/登入</a>
+  				
+  				
+  			
+  			</div>
+
+		</div>
+		<div class="div_2">
+			<a href="addAdvertisements" class="add_test">添加广告</a>
+			<div class="div_show">
+				
+				<table class="table_class">
+					<tr>
+						<td width="200px" height="40px">详情</td>
+						<td width="200px" height="40px">设备种类</td>
+						<td width="200px" height="40px">类型</td>
+						<td width="100px" height="40px">PageId</td>
+						<td width="150px" height="40px">图片</td>
+					</tr>
+					
+						
+					<tr th:each="ad : ${ads}">
+						<td th:text="${ad.detail}"></td>
+						<td th:if="${ad.type==1}" th:text="手机"></td>
+						<td th:if="${ad.type==2}" th:text="笔记本"></td>
+						<td th:if="${ad.style==1}" th:text="商品"></td>
+						<td th:if="${ad.style==2}" th:text="文章"></td>
+						<td th:text="${ad.PageId}"></td>
+						<td><img  th:src="@{'img/'+${ad.photo}}" style="width:150px;height:120px"></td>
+						<td width="100px" height="40px" style="margin-left:50px;"><a onclick="return yesno()"
+							th:href="@{/delete_ads(id=${ad.id})}"  class="goods_delete">删除</a>
+						<td>
+							
+					</tr>
+	
+					
+					
+					
+
+				</table>
+
+			</div>
+		</div>
+	</div>
+	<script th:src="@{js/additional-methods.js}"></script>
+    <script th:src="@{js/jquery-1.11.1.js}"></script>
+
+    <script th:inline="javascript">
+
+	function yesno(){
+		var c=confirm("确定删除");
+		
+		return c;		
+	}
+	/* function jiaoyan() {
+		
+	
+		$.ajax({type : "POST",
+	           url : "get_user.do", 
+	          
+	           success : function (data){
+	        	  
+	        	  if(data=="false"){
+	        		  alert("对不起，只有管理员能添加用户");
+	        	  }else{
+	        		  window.location.href="register.jsp";
+	        	  }
+	           }
+	    });
+
+	
+	}  */
+
+    </script>
+
+</body>
+</html>

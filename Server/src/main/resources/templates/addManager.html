@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>登入</title>
+     <link rel="stylesheet" th:href="@{css/register.css}"></link>
+</head>
+<body>
+	<div class="div_all">
+  	<!-- 第一层 -->
+  		<div id="whole_menu">
+			<div class="div_menu">
+  					<span>用户名:</span><span style="color: red; line-height: 30px;" th:text="${session.username}">
+							</span>
+				
+				
+				<a href="addPhone">添加手机</a>
+				<a href="showPhone">查询手机</a>	
+				<a href="showAds">广告窗管理</a>		
+				<a href="showHotSearch">热门搜索管理</a>			
+				<a href="showManager">用户管理</a>
+				<a href="login">注销/登入</a>
+  				
+  				
+  			
+  			</div>
+		</div>
+  		<!--第2层  -->
+  		<div class="div_2"> 
+  		<!--logo div  -->
+  		
+  			<div class="div_welcome">
+  				<span  class="span_welcome">欢迎注册</span>
+  			</div>
+
+  		</div>
+  		
+
+
+
+  		<div class="div_3">
+  			<form  th:action="@{/add_manager}"  th:object="${manager}" method="post" id="myform">
+	  			<div class="text_1">
+	  				<label class="label_test">用  户  名</label><input  name="username" id="username_id" class="text_class" type="text" th:field="*{username}" placeholder="您的账户名和登录名(6-12位)"  >		
+	  			</div>
+	  			<div class="text_2">
+	  				<label class="label_test">设  置  密  码</label><input  name="password" id="password1_id" class="text_class" type="password" th:field="*{password}" placeholder="建议至少使用两种字符组合(6-12位)">
+	  			</div>
+	  			<div class="text_2">
+	  				<label class="label_test">确  定  密  码</label><input name="password2" id="password2_id" class="text_class" type="password" placeholder="请再次输入密码" >
+	  			</div>
+	  			
+	  			
+	  			<input type="submit" class="zhuce_submit" value="立即注册"/>
+  			</form>
+  		</div>
+
+  	</div>
+
+    <script th:src="@{js/jquery-1.11.1.js}"></script>
+	<script th:src="@{js/jquery.validate.js}"></script>
+	<script th:src="@{js/additional-methods.js}"></script>
+    <script th:inline="javascript">
+   $(function() {
+		$("#myform").validate({
+			// debug: true, //调试模式取消submit的默认提交功能 */   
+			//errorClass: "label.error", //默认为错误的样式类为：error   
+
+		rules : {
+				username : {
+					required:true,
+                    rangelength:[6,12]
+				},
+				password : {
+					required:true,     
+					rangelength:[6,12]
+				},
+				password2 : {
+					required:true,     
+                 	equalTo:"#password1_id"
+				},
+			},
+			messages : {
+				username : {
+					required:"用户名不能为空",
+                    rangelength:"用户名格式不对"
+				},
+				password : {
+					required:"密码不能为空",     
+					rangelength:"密码格式不对"
+				},
+				password2 : {
+					required:"密码不能为空",     
+                 	equalTo:"两次密码不一致"
+				}
+				
+			}
+			
+		});
+	});
+
+    </script>
+
+</body>
+</html>

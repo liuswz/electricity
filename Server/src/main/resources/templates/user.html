@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/><!-- th:href="@{css/bootstrap.css}" -->
+    <title>user</title>
+    <link rel="stylesheet" ></link>
+</head>
+<body class="container">
+<br/>
+<h1>查看用户</h1>
+<br/><br/> 
+<div class="with:80%">
+    <table class="table table-hover" th:each="user : ${user}">
+    	<tr>
+			<td>ID#</td>
+			<td th:text="${user.id}"></td>
+		</tr>
+    	<tr>
+			<td>UserName</td>
+			<td th:text="${user.username}"></td>
+		</tr>
+    	<tr>
+			<td>NiceName</td>
+			<td th:text="${user.password}"></td>
+		</tr>
+    	
+    </table>
+   
+</div> 
+</body>
+</html>

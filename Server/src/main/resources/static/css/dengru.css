@@ -1,0 +1,24 @@
+.background_dengru{
+	background:url(../img/dengru.jpg);
+	width:1200px;
+	height:800px;
+	margin:0px auto;
+	position: relative;
+}
+.dengru{
+	
+	position: absolute;
+	top:400px;
+	left:540px;
+	
+}
+.dengru input{
+	
+	width:200px;
+	height:30px;
+	border:solid green;
+	border-radius:9px;
+	font-size: 16px;
+	margin-top:20px;
+	
+}

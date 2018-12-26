@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>热门搜索</title>
+     <link rel="stylesheet" th:href="@{css/show_phone.css}"></link>
+</head>
+<body>
+	
+	<div class="div_all">
+
+		<div id="whole_menu">
+			<div class="div_menu">
+  				
+					<span>用户名:</span><span style="color: red; line-height: 30px;" th:text="${session.username}">
+							</span>
+				
+				
+				<a href="addPhone">添加手机</a>
+				<a href="showPhone">查询手机</a>	
+				<a href="showAds">广告窗管理</a>		
+				<a href="showHotSearch">热门搜索管理</a>				
+				<a href="showManager">用户管理</a>
+				<a href="login">注销/登入</a>
+  				
+  				
+  			
+  			</div>
+
+		</div>
+		<div class="div_2">
+			<a href="addHotSearch" class="add_test">添加用户</a>
+			<div class="div_show">
+				
+				<table class="table_class">
+					<tr>
+						<td width="200px" height="40px">名称</td>
+					
+					</tr>
+					
+						
+					<tr th:each="h : ${HotSearch}">
+						<td th:text="${h.value}"></td>
+						
+							
+
+						<td width="100px" height="40px"><a onclick="return yesno()"
+							th:href="@{/delete_HotSearch(id=${h.id})}"  class="goods_delete">删除</a>
+						<td>
+							
+					</tr>
+	
+					
+					
+					
+
+				</table>
+
+			</div>
+		</div>
+	</div>
+	<script th:src="@{js/additional-methods.js}"></script>
+    <script th:src="@{js/jquery-1.11.1.js}"></script>
+
+    <script th:inline="javascript">
+
+	function yesno(){
+		var c=confirm("确定删除");
+		
+		return c;		
+	}
+	/* function jiaoyan() {
+		
+	
+		$.ajax({type : "POST",
+	           url : "get_user.do", 
+	          
+	           success : function (data){
+	        	  
+	        	  if(data=="false"){
+	        		  alert("对不起，只有管理员能添加用户");
+	        	  }else{
+	        		  window.location.href="register.jsp";
+	        	  }
+	           }
+	    });
+
+	
+	}  */
+
+    </script>
+
+</body>
+</html>

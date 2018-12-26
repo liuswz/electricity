@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#266cdc"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        >
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/fanhui"
+            android:layout_marginLeft="18dp"
+            android:id="@+id/recommand_back_page"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="最适合您的手机排名"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/rank_title"
+            />
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recycler_recommandview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:nestedScrollingEnabled="false"
+
+        android:scrollbars="none" />
+
+</LinearLayout>

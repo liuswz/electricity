@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>登入</title>
+     <link rel="stylesheet" th:href="@{css/dengru.css}"></link>
+</head>
+<body>
+	<div class="background_dengru">
+
+		<div class="dengru">
+
+			<input type="text" id="usernameId" placeholder="用户名" /><br />
+			<input	type="password" id="passwordId" placeholder="密码" /><br /> 
+			<input type="button" value="登入" style="width: 80px; margin: 30px 200px;" onclick="jiaoyan()" />
+
+		</div>
+
+	</div>
+
+    <script th:src="@{js/jquery-1.11.1.js}"></script>
+
+    <script th:inline="javascript">
+
+	function jiaoyan() {
+		
+		var username = document.getElementById("usernameId").value;
+
+		var password = document.getElementById("passwordId").value;
+
+		$.ajax({type : "POST",
+	           url : "getpassword", 
+	           data : {
+	        	   username : username,
+	        	   password : password,
+	             
+	           },
+	           success : function (data){
+	        	  if(data=="false"){
+	        		  alert("用户名或密码错误");
+	        	  }else{
+	        		  window.location.href="showManager";
+	        	  }
+	           }
+	    });
+
+	
+	}
+
+    </script>
+
+</body>
+</html>

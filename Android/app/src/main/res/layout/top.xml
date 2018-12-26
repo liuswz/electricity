@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:background="@drawable/shape_corner"
+        android:gravity="center"
+        android:text="手机笔记本名称"
+        android:textColor="#bab9be"
+        android:textSize="13sp"
+
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/search"
+        />
+
+</LinearLayout>

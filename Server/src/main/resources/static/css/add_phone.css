@@ -1,0 +1,85 @@
+.whole_menu{
+	width:1500px;
+	height:26px;
+	background: #f1f1f1;
+	
+	line-height:30px;
+}
+.div_menu{
+	margin-left:400px;
+	width:900px;
+	height:26px;
+}
+.div_menu a{
+	
+	color:#6E6D67;
+	text-decoration:none;
+	font-family:宋体;
+	font-size:13px;
+	margin-left:30px;
+	
+}
+.div_menu span{
+	
+	color:#6E6D67;
+	text-decoration:none;
+	font-family:宋体;
+	font-size:14px;
+	margin-left:30px;
+	float:left;
+	background-color: #fff;
+    border: none
+}
+
+.div_menu a:hover{
+	color:#c81623;
+}
+
+.nav {
+	
+	width: 1000px;
+	margin: 50px auto;
+}
+
+
+
+.nav1 {
+	border: 1px solid #666666;
+	border-radius: 5px;
+}
+label {
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	font-size: 14px;
+	display: inline-block;
+}
+
+span {
+	background-color: #FFFFDA;
+	border: 1px solid #FFCD00;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.submit_button {
+	margin-left: 159px;
+	border: dashed 1px ;
+	background-color: yellow;
+	cursor: pointer;
+	width:100px;
+	height:30px;
+}
+/* .phone_img{
+	width:400px;
+	height:300px;
+} */
+.error{
+	color:red;
+	width: 250px;
+	
+}

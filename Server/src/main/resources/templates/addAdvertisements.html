@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>登入</title>
+     <link rel="stylesheet" th:href="@{css/add_phone.css}"></link>
+</head>
+<body>
+	<div class="div_all">
+  	<!-- 第一层 -->
+  		<div id="whole_menu">
+			<div class="div_menu">
+  					<span>用户名:</span><span style="color: red; line-height: 30px;" th:text="${session.username}">
+							</span>
+				
+				<a href="addPhone">添加手机</a>
+				<a href="showPhone">查询手机</a>	
+				<a href="showAds">广告窗管理</a>		
+				<a href="showHotSearch">热门搜索管理</a>			
+				<a href="showManager">用户管理</a>
+				<a href="login">注销/登入</a>
+  				
+  				
+  			
+  			</div>
+		</div>
+  		<!--第2层  -->
+  		<div class="nav">
+		<h1>比比网</h1>
+		<div class="nav1">
+		<form  th:action="@{/add_advertisements}"   method="post" id="myform" enctype="multipart/form-data">
+				
+				<p>
+					<label for="phone_name">详情：</label> <input type="text"
+						name="details" size="20px" style="width:250px;" >
+				</p>
+				<p>
+					<label for="phone_name">手机或笔记本：</label> 
+					<select name="type"  id="typeid">		
+							<option value="1">手机</option>
+							<option value="2">笔记本</option>	
+					</select>
+				</p>
+				<p>
+					<label for="phone_name">商品或文章：</label>
+					<select name="style"  id="styleid">		
+							<option value="1">商品</option>
+							<option value="2">文章</option>	
+					</select>
+				</p>
+
+				<p> 
+					<label for="phone_name">PageId：</label> <input type="text"
+						name="pageId" size="10px" style="width:250px;" id="page_Id"><!-- <button onclick="get_phone()">查询</button> -->
+						<input  class="button" type="button"  onclick="get_phone()" value="查询" />
+						名称:<label id="phone_details" style="color:blue;width:100px;"></label>
+				</p>
+				
+				<p>
+					<label for="tel">图片:</label> <input type="file"
+						name="photo" >
+				</p>
+				
+				
+				<input class="submit_button" type="submit" value="提交" />
+			</form>
+		</div>
+	</div>
+  	</div>
+
+    <script th:src="@{js/jquery-1.11.3.min.js}"></script>
+	<script th:src="@{js/jquery.validate.js}"></script>
+	<script th:src="@{js/additional-methods.js}"></script>
+    <script type="text/javascript" th:inline="javascript">
+	function get_phone() {
+		
+		
+		 $.ajax({type : "POST",
+	           url :  [[@{/get_phone}]],
+	           data:{ id: $("#page_Id").val()},
+	           success : function (data){
+	        	   
+	        	   $("#phone_details").text(data);
+ 
+	        	
+	           }
+	    });
+		
+
+
+	
+	} 
+	
+    $(function() {
+    	
+		$("#myform").validate({
+			// debug: true, //调试模式取消submit的默认提交功能 */   
+			//errorClass: "label.error", //默认为错误的样式类为：error   
+		rules : {
+				
+				
+				pageId : {
+					required : true,
+					digits : true
+				},
+				
+				photo : {
+					required : true,
+					extension : 'gif|jpg|png'
+				}
+		
+
+			},
+			messages : {
+				
+				pageId : {
+					required : "pageId不能为空",
+					digits : "pageId必须为整数"
+				},
+				
+				photo : {
+					required : "照片不能为空",
+					extension : "图片格式不对"
+				}
+				
+			
+				 
+			}
+		
+
+		});
+
+	});
+
+    </script>
+
+</body>
+</html>

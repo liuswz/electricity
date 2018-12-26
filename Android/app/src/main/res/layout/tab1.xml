@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.electricity.hasee.electricity.XUtil.ScrollBottomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.stx.xhb.xbanner.XBanner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:AutoPlayTime="3000"
+
+            app:pointsContainerBackground="#44AAAAAA"
+            app:pointsPosition="RIGHT"
+            app:tipTextColor="#FFFFFFFF"
+            app:tipTextSize="16.0sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.8"
+                android:text="排行"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:orientation="vertical"
+                android:id="@+id/zonghe_rank">
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/zonghe"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="综合"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/richang_rank">
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/richang"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:text="日常体验（除游戏）"
+                    android:textColor="#666"
+                    android:textSize="9sp" />
+
+              <!--  <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="0dp"
+                    android:text="（除游戏）"
+                    android:textColor="#666"
+                    android:textSize="8sp" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/xingneng_rank">
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/iconfontyouxi"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="3dp"
+                    android:text="性能"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/photo_rank">
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/zhaopianpaizhao"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="拍照"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/xuhang_rank">
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/dianchi"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="续航"
+                    android:textColor="#666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:background="#fff"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#fff"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.8"
+                    android:text="小米"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:alpha="0.8"
+                    android:gravity="right"
+                    android:text="更多"
+                    android:textColor="@color/red"
+                    android:textSize="13sp"
+                    android:id="@+id/xiaomi_more"/>
+            </LinearLayout>
+            <View
+
+                android:layout_height="0.5dp"
+
+                android:layout_width="match_parent"
+
+                android:background="#d9d9d9"
+
+                />
+          <!--  <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:id="@+id/xiaomi_gridview"
+                >
+
+            </GridView>-->
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/xiaomi_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:scrollbars="none"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:background="#fff"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#fff"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:text="荣耀"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/honor_more"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:text="更多"
+                    android:textColor="@color/red"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="0.5dp"
+
+                android:background="#d9d9d9"
+
+                />
+            <!--    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:id="@+id/honor_gridview"
+                >
+
+            </GridView>--><!--    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:id="@+id/honor_gridview"
+                >
+
+            </GridView>-->
+
+            <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/honor_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+               />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#fff"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#fff"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.8"
+                    android:text="华为"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:alpha="0.8"
+                    android:gravity="right"
+                    android:text="更多"
+                    android:textColor="@color/red"
+                    android:textSize="13sp"
+                    android:id="@+id/huawei_more"/>
+            </LinearLayout>
+            <View
+
+                android:layout_height="0.5dp"
+
+                android:layout_width="match_parent"
+
+                android:background="#d9d9d9"
+
+                />
+         <!--   <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:id="@+id/huawei_gridview"
+                ></GridView>-->
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/huawei_recyclerview"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+               />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#fff"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#fff"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.8"
+                    android:text="苹果"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:alpha="0.8"
+                    android:gravity="right"
+                    android:text="更多"
+                    android:textColor="@color/red"
+                    android:textSize="13sp"
+                    android:id="@+id/iphone_more"/>
+            </LinearLayout>
+            <View
+
+                android:layout_height="0.5dp"
+
+                android:layout_width="match_parent"
+
+                android:background="#d9d9d9"
+
+                />
+          <!--  <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:id="@+id/iphone_gridview"
+                >
+
+            </GridView>-->
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iphone_recyclerview"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#fff"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#fff"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.8"
+                    android:text="Oppo"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:alpha="0.8"
+                    android:gravity="right"
+                    android:text="更多"
+                    android:textColor="@color/red"
+                    android:textSize="13sp"
+                    android:id="@+id/oppo_more"/>
+            </LinearLayout>
+            <View
+
+                android:layout_height="0.5dp"
+
+                android:layout_width="match_parent"
+
+                android:background="#d9d9d9"
+
+                />
+          <!--  <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:id="@+id/oppo_gridview"
+                >
+
+            </GridView>-->
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/oppo_recyclerview"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#fff"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#fff"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.8"
+                    android:text="Vivo"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                   />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:alpha="0.8"
+                    android:gravity="right"
+                    android:text="更多"
+                    android:textColor="@color/red"
+                    android:textSize="13sp"
+                    android:id="@+id/vivo_more"/>
+            </LinearLayout>
+            <View
+
+                android:layout_height="0.5dp"
+
+                android:layout_width="match_parent"
+
+                android:background="#d9d9d9"
+
+                />
+          <!--  <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:id="@+id/vivo_gridview"
+                >
+
+            </GridView>-->
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/vivo_recyclerview"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#fff"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#fff"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.8"
+                    android:text="魅族"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:alpha="0.8"
+                    android:gravity="right"
+                    android:text="更多"
+                    android:textColor="@color/red"
+                    android:textSize="13sp"
+                    android:id="@+id/meizu_more"/>
+            </LinearLayout>
+            <View
+
+                android:layout_height="0.5dp"
+
+                android:layout_width="match_parent"
+
+                android:background="#d9d9d9"
+
+                />
+          <!--  <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:id="@+id/meizu_gridview"
+                >
+
+            </GridView>-->
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/meizu_recyclerview"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+              />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#fff"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.8"
+                android:text="热门"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!--  <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/gank_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants">
+
+            <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:nestedScrollingEnabled="false"
+
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--   </android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <!--    <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            tools:layout_editor_absoluteX="156dp"
+            tools:layout_editor_absoluteY="194dp" />-->
+</com.electricity.hasee.electricity.XUtil.ScrollBottomScrollView>

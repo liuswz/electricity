@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>登入</title>
+     <link rel="stylesheet" th:href="@{css/add_phone.css}"></link>
+</head>
+<body>
+	<div class="div_all">
+  	<!-- 第一层 -->
+  		<div id="whole_menu">
+			<div class="div_menu">
+  					<span>用户名:</span><span style="color: red; line-height: 30px;" th:text="${session.username}">
+							</span>
+				
+				<a href="addPhone">添加手机</a>
+				<a href="showPhone">查询手机</a>	
+				<a href="showAds">广告窗管理</a>		
+				<a href="showHotSearch">热门搜索管理</a>			
+				<a href="showManager">用户管理</a>
+				<a href="login">注销/登入</a>
+  				
+  				
+  			
+  			</div>
+		</div>
+  		<!--第2层  -->
+  		<div class="nav">
+		<h1>比比网</h1>
+		<div class="nav1">
+		<form  th:action="@{/updatePhone}"   method="post" id="myform" enctype="multipart/form-data">
+				
+				<p>
+					<label for="phone_name">名称：</label> <input type="text"
+						name="name" size="13px" style="width:250px;" th:value="${p.name}">
+				</p>
+				<p>
+					<label for="phone_name">牌子：</label> <input type="text"
+						name="brand" size="13px" style="width:250px;" th:value="${p.brand}">
+				</p>
+				<p>
+					<label for="phone_name">尺寸：</label> <input type="text"
+						name="size" size="13px" style="width:250px;" th:value="${p.size}">
+				</p>
+<!--性能  -->				
+				<p> 
+					<label for="phone_name">性能:</label>
+					
+				</p>
+				 
+				<p>
+					<label for="phone_name">cpu名称：</label> <input type="text"
+						name="cpu" size="13px" style="width:250px;" th:value="${p.cpu}">
+				</p>
+				<p>
+					<label for="phone_name">cpu分数：</label><input type="text"
+						name="cpu_num" size="13px" style="width:250px;" th:value="${p.cpu_num}">
+						
+						
+				</p>
+				<p>
+					<label for="phone_name">gpu分数：</label> <input type="text"
+						name="gpu_num" size="13px" style="width:250px;" th:value="${p.gpu_num}">
+				</p>
+				<p>
+					<label for="phone_name">ai分数：</label> <input type="text"
+						name="ai_num" size="13px" style="width:250px;" th:value="${p.ai_num}">
+				</p>
+				<p>
+					<label for="phone_name">闪存名称：</label> <input type="text"
+						name="rom" size="13px" style="width:250px;" th:value="${p.rom}">
+				</p>
+				<p>
+					<label for="phone_name">闪存分数：</label> <input type="text"
+						name="rom_num" size="13px" style="width:250px;" th:value="${p.rom_num}">
+				</p>
+<!--ui  -->		 	
+				<p>
+					<label for="phone_name">ui:</label>
+				</p>
+				<p>
+					<label for="phone_name">ui名称：</label> <input type="text"
+						name="ui" size="13px" style="width:250px;" th:value="${p.ui}">
+				</p>
+				<p>
+					<label for="phone_name">ui分数：</label> <input type="text"
+						name="ui_num" size="13px" style="width:250px;" th:value="${p.ui_num}">
+				</p>
+ 				
+	
+				<p>
+					<label for="phone_name">拍照:</label>
+				</p>
+				<p>
+					<label for="phone_name">前置摄像头：</label> <input type="text"
+						name="front_cam" size="13px" style="width:250px;" th:value="${p.front_cam}">
+				</p>
+	
+				<p> 
+					<label for="phone_name">前置摄像头分数：</label> <input type="text"
+						name="front_cam_num" size="13px" style="width:250px;" th:value="${p.front_cam_num}">
+				</p>
+				<p>
+					<label for="phone_name">后置摄像头：</label> <input type="text"
+						name="back_cam" size="13px" style="width:250px;" th:value="${p.back_cam}" >
+				</p>
+				<p>
+					<label for="phone_name">后置摄像头分数：</label> <input type="text"
+						name="back_cam_num" size="13px" style="width:250px;" th:value="${p.back_cam_num}">
+				</p>
+				
+				
+	
+				<p>
+					<label for="phone_name">外观:</label>
+				</p>
+				<p>
+					<label for="phone_name">前面外观：</label> <input type="text"
+						name="front_beauty" size="13px" style="width:250px;" th:value="${p.front_beauty}">
+				</p>
+				<p>
+					<label for="phone_name">前面外观分数：</label> <input type="text"
+						name="front_beauty_num" size="13px" style="width:250px;" th:value="${p.front_beauty_num}">
+				</p>
+				<p>
+					<label for="phone_name">后盖外观：</label> <input type="text"
+						name="back_beauty" size="13px" style="width:250px;" th:value="${p.back_beauty}">
+				</p>
+				<p>
+					<label for="phone_name">后盖外观分数：</label> <input type="text"
+						name="back_beauty_num" size="13px" style="width:250px;" th:value="${p.back_beauty_num}">
+				</p>
+				<p>
+					<label for="phone_name">手感分数：</label> <input type="text"
+						name="hand_num" size="13px" style="width:250px;" th:value="${p.hand_num}">
+				</p>
+				
+				<p>
+					<label for="phone_name">屏幕:	</label>
+						
+				</p>				
+				<p>
+					<label for="phone_name">屏幕：</label> <input type="text"
+						name="screen" size="13px" style="width:250px;" th:value="${p.screen}">
+				</p>
+				<p>
+					<label for="phone_name">屏幕分数：</label> <input type="text"
+						name="screen_num" size="13px" style="width:250px;"th:value="${p.screen_num}">
+				</p>
+  				
+				<p>
+					<label for="phone_name">续航:	</label>
+				</p>
+				<p>
+					<label for="phone_name">电池大小：</label> <input type="text"
+						name="battery" size="13px" style="width:250px;" th:value="${p.battery}">
+				</p>
+				<p>
+					<label for="phone_name">功耗：</label> <input type="text"
+						name="consume_power" size="13px" style="width:250px;" th:value="${p.consume_power}" >
+				</p>
+				<p>
+					<label for="phone_name">功耗分数：</label> <input type="text"
+						name="consume_power_num" size="13px" style="width:250px;" th:value="${p.consume_power_num}">
+				</p>
+				<p>
+					<label for="phone_name">充电描述：</label> <input type="text"
+						name="charge" size="13px" style="width:250px;" th:value="${p.charge}">
+				</p>
+				<p>
+					<label for="phone_name">充电分数：</label> <input type="text"
+						name="charge_num" size="13px" style="width:250px;" th:value="${p.charge_num}">
+				</p>
+				
+				<p>
+					<label for="phone_name">特殊:	</label>
+					
+						
+				</p>
+				<p>
+					<label for="phone_name">特殊功能：</label> <input type="text"
+						name="special" size="13px" style="width:250px;" th:value="${p.special}">
+				</p>
+				<p>
+					<label for="phone_name">特殊功能分数：</label> <input type="text"
+						name="special_num" size="13px" style="width:250px;" th:value="${p.special_num}">
+				</p>
+				
+				<p>
+					<label for="phone_name">价格:	</label>
+						
+				</p>
+				<p>
+					<label for="phone_name">规格1：</label><input type="text" 
+						name="type1" size="13px" th:value="${p.type1}"> <input type="text"
+						name="price1" size="13px" th:value="${p.price1}">元
+				</p>
+				<p>
+					<label for="phone_name">规格2：</label><input type="text"
+						name="type2" size="13px" th:value="${p.type2}"> <input type="text"
+						name="price2" size="13px" th:value="${p.price2}">元
+				</p>
+				<p>
+					<label for="phone_name">规格3：</label><input type="text"
+						name="type3" size="13px" th:value="${p.type3}"> <input type="text"
+						name="price3" size="13px" th:value="${p.price3}">元
+				</p>
+				<p>
+					<label for="phone_name">内存差价：</label> <input type="text"
+						name="different_price" size="13px" style="width:250px;" th:value="${p.different_price}">
+				</p>
+				<p>
+					<label for="phone_name">官方店链接：</label> <input type="text"
+						name="officialLink" size="13px" style="width:500px;" th:value="${p.officialShopLink}">
+				</p>
+				<p>
+					<label for="phone_name">淘宝最低价店链接：</label> <input type="text"
+						name="cheapestLink" size="13px" style="width:500px;" th:value="${p.cheapestShopLink}">
+				</p>
+				<p>
+					<label for="phone_name">总体评价：</label> <input type="text"
+						name="self_comment" size="13px" style="width:500px;" th:value="${p.self_comment}">
+				</p>
+				
+				<p>
+					<label for="phone_name">点击量：</label> <input type="text"
+						name="click_num" size="13px" style="width:200px;" th:value="${p.click_num}">
+				</p>
+				
+				<!-- img/${p.picture2} -->
+				<p>
+					<label for="tel">首页照片:</label><img  th:src="@{'img/'+${p.picture}}" style="width:230px;height:150px">
+					 <input type="file"	name="picture1_name" >
+				</p>
+				<p>
+					<label for="tel">照片2:</label><img  th:src="@{'img/'+${p.picture2}}" style="width:230px;height:150px">
+					 <input type="file"name="picture2_name" >
+				</p>
+				<p>
+					<label for="tel">照片3:</label><img  th:src="@{'img/'+${p.picture3}}" style="width:230px;height:150px">
+					 <input type="file"	name="picture3_name">
+				</p>
+				<p>
+					<label for="tel">照片4:</label> <img th:src="@{'img/'+${p.picture4}}" style="width:230px;height:150px">
+					<input type="file"	name="picture4_name" >
+				</p>
+				<p>
+					<label for="tel">照片5:</label> <img  th:src="@{'img/'+${p.picture5}}" style="width:230px;height:150px">
+					<input type="file"	name="picture5_name" >
+				</p>
+				<input type="hidden" th:value="${p.id}" name="id">
+				<input class="submit_button" type="submit" value="提交" />
+			</form>
+		</div>
+	</div>
+  	</div>
+
+    <script th:src="@{js/jquery-1.11.1.js}"></script>
+	<script th:src="@{js/jquery.validate.js}"></script>
+	<script th:src="@{js/additional-methods.js}"></script>
+    <script th:inline="javascript">
+    $(function() {
+		$("#myform").validate({
+			// debug: true, //调试模式取消submit的默认提交功能 */   
+			//errorClass: "label.error", //默认为错误的样式类为：error   
+		rules : {
+				name : {
+					required : true
+				},
+				brand : {
+					required : true
+				},
+				size:{
+					required : true,
+					number : true
+				},
+				cpu : {
+					required : true
+				},
+				cpu_num : {
+					required : true,
+					number : true
+				},
+				gpu_num : {
+					required : true,
+					number : true
+				},
+				ai_num: {
+					required : true,
+					number : true
+				},
+				rom : {
+					required : true
+				},
+				rom_num : {
+					required : true,
+					number : true
+				},
+				ui:{   
+					required : true
+				},
+				ui_num : {
+					required : true,
+					number : true
+				},
+				
+				front_cam : {
+					required : true	
+				},
+				front_cam_num : {
+					required : true,
+					number : true
+				},
+				back_cam : {
+					required : true
+				},
+				back_cam_num : {
+					required : true,
+					number : true
+				},
+				front_beauty : {
+					required : true
+				},
+				front_beauty_num : {
+					required : true,
+					number : true
+				},
+				back_beauty : {
+					required : true	
+				},
+				back_beauty_num : {
+					required : true,
+					number : true
+				},
+				hand_num : {
+					required : true,
+					number : true
+				},
+				screen : {
+					required : true	
+				},
+				screen_num : {
+					required : true,
+					number : true
+				},
+				battery : {
+					required : true,
+					number : true
+				},
+				consume_power : {
+					required : true
+				},
+				consume_power_num : {
+					required : true,
+					number : true
+				},
+				charge : {
+					required : true
+				},
+				charge_num : {
+					required : true,
+					number : true
+				},
+				special : {
+					required : true
+				},
+				special_num : {
+					required : true,
+					number : true
+				},
+				type1 : {
+					required : true	
+				},
+				price1 : {
+					required : true,
+					digits : true
+				},
+				
+				price2 : {
+					
+					digits : true
+				},
+			
+				price3 : {
+					
+					digits : true
+				},
+				different_price : {
+					required : true,
+					digits : true
+				},
+				officialLink : {
+					
+					required : true
+				},
+				cheapestLink : {
+					
+					required : true
+				},
+				self_comment : {
+					
+					required : true
+				},
+				click_num : {
+					
+					required : true,
+					digits : true
+				},
+				picture1_name : {
+					
+					extension : 'gif|jpg|png'
+				},
+				picture2_name : {
+					
+					extension : 'gif|jpg|png'
+				},
+				picture3_name : {
+					
+					extension : 'gif|jpg|png'
+				},
+				picture4_name : {
+					
+					extension : 'gif|jpg|png'
+				},
+				picture5_name : {
+					
+					extension : 'gif|jpg|png'
+				} 
+		
+
+			},
+			messages : {
+				name : {
+					required : "名称不能为空"
+				},
+				brand : {
+					required : "牌子不能为空"
+				},
+				size:{
+					required : "尺寸不能为空",	
+					number : "尺寸必须为数字"
+				},
+				cpu : {
+					required : "cpu名称不能为空"
+				},
+				cpu_num : {
+					required : "cpu分数不能为空",
+					number : "cpu分数必须为数字"
+				},
+				gpu_num : {
+					required : "gpu分数不能为空",
+					number : "gpu分数必须为数字"
+				},
+				ai_num: {
+					required : "ai分数不能为空",
+					number : "ai分数必须为数字"
+				},
+				rom : {
+					required : "rom名称不能为空"
+				},
+				rom_num : {
+					required : "rom分数不能为空",
+					number : "rom分数必须为数字"
+				},
+				ui:{   
+					required : "ui名称不能为空"
+				},
+				ui_num : {
+					required : "ui功能分数不能为空",
+					number : "ui功能分数必须为数字"
+				},
+				
+				front_cam : {
+					required : "前置摄像头名称不能为空"
+				},
+				front_cam_num : {
+					required : "前置摄像头分数不能为空",
+					number : "前置摄像头分数必须为数字"
+				},
+				back_cam : {
+					required : "后置摄像头名称不能为空"
+				},
+				back_cam_num : {
+					required : "后置摄像头分数不能为空",
+					number : "后置摄像头分数必须为数字"
+				},
+				front_beauty : {
+					required : "前面外观描述不能为空"
+				},
+				front_beauty_num : {
+					required : "前面外观分数不能为空",
+					number : "前面外观分数必须为数字"
+				},
+				back_beauty : {
+					required : "后盖外观描述不能为空"	
+				},
+				back_beauty_num : {
+					required : "后盖外观分数不能为空",
+					number : "后盖外观分数必须为数字"
+				},
+				hand_num : {
+					required : "手感分数不能为空",
+					number : "手感分数必须为数字"
+				},
+				screen : {
+					required : "屏幕不能为空"
+				},
+				screen_num : {
+					required : "屏幕分数不能为空",
+					number : "屏幕分数必须为数字"
+				},
+				battery : {
+					required : "电池大小不能为空",
+					number : "电池大小必须为数字"
+				},
+				consume_power : {
+					required : "功耗不能为空"
+				},
+				consume_power_num : {
+					required : "功耗分数不能为空",
+					number : "功耗分数必须为数字"
+				},
+				charge : {
+					required : "充电描述不能为空"
+				},
+				charge_num : {
+					required : "充电分数不能为空",
+					number : "充电分数必须为数字"
+				},
+				special : {
+					required : "特殊功能不能为空"
+				},
+				special_num : {
+					required : "特殊功能分数不能为空",
+					number : "特殊功能分数必须为数字"
+				},
+				type1 : {
+					required : "配置1不能为空"
+				},
+				price1 : {
+					required : "配置1价格不能为空",
+					digits : "配置1价格必须为整数"
+				},
+				price2 : {
+					
+					digits : "配置2价格必须为整数"
+				},
+			
+				price3 : {
+					
+					digits : "配置3价格必须为整数"
+				},
+				different_price : {
+					required :"内存差价不能为空",
+					digits : "内存差价必须为整数"
+				},
+				officialLink : {
+					
+					required :"官方店链接不能为空"
+				},
+				cheapestLink : {
+					
+					required : "最低价链接不能为空"
+				},
+				self_comment : {
+					
+					required : "总体评价不能为空"
+				},
+				click_num : {
+					
+					required : "点击量不能为空",
+					digits : "点击量必须为整数"
+				},
+				picture1_name : {
+					
+					extension : "图片格式不对"
+				},
+				picture2_name : {
+					
+					extension : "图片格式不对"
+				},
+				picture3_name : {
+					
+					extension : "图片格式不对"
+				},
+				picture4_name : {
+				
+					extension : "图片格式不对"
+				},
+				picture5_name : {
+					
+					extension : "图片格式不对"
+				}
+				 
+			}
+		
+
+		});
+
+	});
+
+    </script>
+
+</body>
+</html>

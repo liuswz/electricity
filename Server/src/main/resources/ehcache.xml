@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+         updateCheck="false">
+         
+ <diskStore path="java.io.tmpdir/Tmp_EhCache" />
+
+<!--      <defaultCache
+            eternal="false"
+            maxElementsInMemory="1000"
+            overflowToDisk="false"
+            diskPersistent="false"
+            timeToIdleSeconds="0"
+            timeToLiveSeconds="10"
+            memoryStoreEvictionPolicy="LRU" />
+ -->
+
+ 			<cache name="AdvertisementsBytype"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+               eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+             
+                 overflowToDisk="false"
+               />  
+        <cache name="getPhone"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+               eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+             
+                 overflowToDisk="false"
+               />  
+       	<cache name="total_Ranking" 
+       	 	   maxElementsOnDisk="300"  
+               maxElementsInMemory="100"   
+               timeToIdleSeconds="120" 
+               timeToLiveSeconds="120"  
+               overflowToDisk="false"
+               
+               />  
+       	<cache name="Common_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+               overflowToDisk="false"
+               
+               />           
+        <cache name="Game_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+               overflowToDisk="false"
+               
+               />    
+               
+               
+               
+        <cache name="Camera_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+               overflowToDisk="false"
+               
+               />  
+       	<cache name="XuHang_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+               overflowToDisk="false"
+               
+               />  
+       	<cache name="SumTotal_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+              overflowToDisk="false"
+               
+               />           
+        <cache name="SumCommon_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+               overflowToDisk="false"
+               
+               />  
+               
+               
+               
+               
+         <cache name="SumGame_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+               overflowToDisk="false"
+               
+               />  
+       	<cache name="SumCamera_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+                overflowToDisk="false"
+               
+               />  
+       	<cache name="SumXuHang_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+              overflowToDisk="false"
+               
+               />           
+        <cache name="Xiaomi_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+            	overflowToDisk="false"
+               
+               />      
+               
+               
+               
+           <cache name="Honor_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+               overflowToDisk="false"
+               
+               />  
+       	<cache name="Huawei_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+                overflowToDisk="false"
+               
+               />  
+       	<cache name="IPhone_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+                overflowToDisk="false"
+               
+               />           
+        <cache name="Oppo_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+                overflowToDisk="false"
+               
+               />                       
+               
+        
+        
+           <cache name="Vivo_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+               overflowToDisk="false"
+               
+               />  
+       	<cache name="Meizu_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+              overflowToDisk="false"
+               
+               />  
+       	<cache name="SumXiaomi_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+              overflowToDisk="false"
+               
+               />           
+        <cache name="SumHonor_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+                overflowToDisk="false"
+               
+               />        
+               
+               
+       <cache name="SumHuawei_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+               overflowToDisk="false"
+               
+               />  
+       	<cache name="SumIPhone_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+                overflowToDisk="false"
+               
+               />  
+       	<cache name="SumOppo_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+               overflowToDisk="false"
+               
+               />           
+        <cache name="SumVivo_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+                overflowToDisk="false"
+               
+               />  
+        <cache name="SumMeizu_Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+               overflowToDisk="false"
+               
+               />  
+       	<cache name="Xiaomi_4Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+                overflowToDisk="false"
+               
+               />  
+       	<cache name="Honor_4Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+                overflowToDisk="false"
+               
+               />           
+        <cache name="Huawei_2Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+                overflowToDisk="false"
+               
+               />   
+               
+               
+               
+               
+          <cache name="IPhone_2Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+              overflowToDisk="false"
+               
+               />  
+        <cache name="Oppo_2Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+             	overflowToDisk="false"
+               
+               />  
+       	<cache name="Vivo_2Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+                overflowToDisk="false"
+               
+               />  
+       	<cache name="Meizu_2Ranking"  
+               maxElementsOnDisk="300"  
+               maxElementsInMemory="100"  
+                eternal="false"  
+               timeToIdleSeconds="120"  
+               timeToLiveSeconds="120"  
+              overflowToDisk="false"
+               
+               />           
+                                                                                      
+    </ehcache>  

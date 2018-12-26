@@ -1,0 +1,117 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.electricity.hasee.electricity.MainActivity"
+    >
+
+
+
+    <FrameLayout
+
+        android:id="@+id/fl_radio_show"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+
+        ></FrameLayout>
+
+    <RadioGroup
+
+        android:id="@+id/rg_radio_navigation"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        android:layout_gravity="bottom">
+
+        <RadioButton
+
+            android:id="@+id/rb_radio_homepage"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:gravity="center"
+
+            android:drawableTop="@drawable/mainpage"
+
+            android:text="首页"
+
+            android:button="@null"
+
+            android:paddingBottom="5dp"
+
+            android:textColor="@drawable/radio_button_selector"
+            android:textSize="12sp"
+            />
+
+        <RadioButton
+
+            android:id="@+id/rb_radio_individuality"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:gravity="center"
+
+            android:drawableTop="@drawable/individuality"
+            android:text="个性化"
+
+            android:button="@null"
+            android:paddingBottom="5dp"
+
+            android:textSize="12sp"
+            android:textColor="@drawable/radio_button_selector"
+
+            />
+
+        <RadioButton
+
+            android:id="@+id/rb_radio_people"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:gravity="center"
+
+            android:drawableTop="@drawable/people"
+
+            android:text="个人"
+            android:textSize="12sp"
+            android:button="@null"
+
+
+            android:paddingBottom="5dp"
+            android:textColor="@drawable/radio_button_selector"
+
+            />
+
+
+
+    </RadioGroup>
+
+</LinearLayout>
